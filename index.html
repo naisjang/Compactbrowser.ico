@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>简洁浏览器</title>
+  </head>
+  <body>	
+	<html>
+ <p style="text-align:center"><img src="tb3.png"></p>
+<head>
+<!-- 请把这段放在 head 里面 -->
+<script type="text/javascript" language="javascript1.5">
+<!--
+window.onload = theClock
+function theClock() {
+now = new Date;
+theTime = ((now.getHours() > 0 && now.getHours() < 13)) ? now.getHours() : (now.getHours() == 0) ? 12 : now.getHours()-12;
+theTime += (now.getMinutes() > 9) ? ":" + now.getMinutes() : ":0" + now.getMinutes();
+theTime += (now.getSeconds() > 9) ? ":" + now.getSeconds() : ":0" + now.getSeconds();
+theTime += (now.getHours() < 12) ? " am" : " pm";
+clockSpan = document.getElementById("myClock");
+clockSpan.replaceChild(document.createTextNode(theTime), clockSpan.firstChild);
+setTimeout("theClock()",1000);
+}
+// End hiding script from old browsers -->
+</script>
+<!-- 这里结束 -->
+</head>
+<body>
+<!-- 请把下面这一行放在 body 里面 -->
+<h1 style="text-align:center"><span id="myClock">?</span></h1>
+  </div>
+  <br />
+<body>
+<form style="text-align:center" onsubmit="return search()" class="search_bar">
+<span><input type="text" <input type="text" name="wd"
+               style="height: 35px;width: 550px;padding-left:10px;border-radius: 10px;outline: none;border-color: RGB(196,199,206) value="" placeholder="请问您要输入些什么(๑°3°๑)" autocomplete="off" id="search_input" ></span>
+</form>
+<div id="content">
+</div>
+<script type="text/javascript">function search(){if(document.getElementById("search_input").value != ""){window.location.href = "https://m.baidu.com/s?from=1011440l&word=" + document.getElementById("search_input").value;document.getElementById("search_input").value = "";}return false;}</script>
+  <h1 style="text-align:center">音乐狂魔&奈斯共同制作</h1>
+  <style>
+body {
+background-image: url("js.png");
+} 
+</body>
+</body>
+</html>
+  </body>
+</html>
